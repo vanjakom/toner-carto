@@ -636,19 +636,19 @@ db/$(strip $(word 1, $(subst :, ,$(1)))): $(strip $(word 2, $(subst :, ,$(1)))) 
 endef
 
 # <name>:<source file>:[shapefile]
-NATURAL_EARTH=ne_50m_land:data/ne/50m/physical/ne_50m_land.zip \
-	ne_50m_admin_0_countries_lakes:data/ne/50m/cultural/ne_50m_admin_0_countries_lakes.zip \
-	ne_10m_admin_0_countries_lakes:data/ne/10m/cultural/ne_10m_admin_0_countries_lakes.zip \
-	ne_10m_admin_0_boundary_lines_map_units:data/ne/10m/cultural/ne_10m_admin_0_boundary_lines_map_units.zip \
-	ne_50m_admin_1_states_provinces_lines:data/ne/50m/cultural/ne_50m_admin_1_states_provinces_lines.zip \
-	ne_10m_geography_marine_polys:data/ne-stamen/10m/physical/ne_10m_geography_marine_polys.zip \
-	ne_50m_geography_marine_polys:data/ne-stamen/50m/physical/ne_50m_geography_marine_polys.zip \
-	ne_110m_geography_marine_polys:data/ne-stamen/110m/physical/ne_110m_geography_marine_polys.zip \
-	ne_10m_airports:data/ne-stamen/10m/cultural/ne_10m_airports.zip \
-	ne_10m_roads:data/ne/10m/cultural/ne_10m_roads.zip \
-	ne_10m_lakes:data/ne/10m/physical/ne_10m_lakes.zip \
-	ne_50m_lakes:data/ne/50m/physical/ne_50m_lakes.zip \
-	ne_10m_admin_0_boundary_lines_land:data/ne/10m/cultural/ne_10m_admin_0_boundary_lines_land.zip \
+NATURAL_EARTH=ne_50m_land:data/ne/50m/physical/ne_50m_land.zip:ne_50m_land.shp \
+	ne_50m_admin_0_countries_lakes:data/ne/50m/cultural/ne_50m_admin_0_countries_lakes.zip:ne_50m_admin_0_countries_lakes.shp \
+	ne_10m_admin_0_countries_lakes:data/ne/10m/cultural/ne_10m_admin_0_countries_lakes.zip:ne_10m_admin_0_countries_lakes.shp \
+	ne_10m_admin_0_boundary_lines_map_units:data/ne/10m/cultural/ne_10m_admin_0_boundary_lines_map_units.zip:ne_10m_admin_0_boundary_lines_map_units.shp \
+	ne_50m_admin_1_states_provinces_lines:data/ne/50m/cultural/ne_50m_admin_1_states_provinces_lines.zip:ne_50m_admin_1_states_provinces_lines.shp \
+	ne_10m_geography_marine_polys:data/ne-stamen/10m/physical/ne_10m_geography_marine_polys.zip:ne_10m_geography_marine_polys.shp \
+	ne_50m_geography_marine_polys:data/ne-stamen/50m/physical/ne_50m_geography_marine_polys.zip:ne_50m_geography_marine_polys.shp \
+	ne_110m_geography_marine_polys:data/ne-stamen/110m/physical/ne_110m_geography_marine_polys.zip:ne_110m_geography_marine_polys.shp \
+	ne_10m_airports:data/ne-stamen/10m/cultural/ne_10m_airports.zip:ne_10m_airports.shp \
+	ne_10m_roads:data/ne/10m/cultural/ne_10m_roads.zip:ne_10m_roads.shp \
+	ne_10m_lakes:data/ne/10m/physical/ne_10m_lakes.zip:ne_10m_lakes.shp \
+	ne_50m_lakes:data/ne/50m/physical/ne_50m_lakes.zip:ne_50m_lakes.shp \
+	ne_10m_admin_0_boundary_lines_land:data/ne/10m/cultural/ne_10m_admin_0_boundary_lines_land.zip:ne_10m_admin_0_boundary_lines_land.shp \
 	ne_50m_admin_0_boundary_lines_land:data/ne/50m/cultural/ne_50m_admin_0_boundary_lines_land.zip:ne_50m_admin_0_boundary_lines_land.shp \
 	ne_10m_admin_1_states_provinces_scale_rank:data/ne/10m/cultural/ne_10m_admin_1_states_provinces_scale_rank.zip:ne_10m_admin_1_states_provinces_scale_rank/ne_10m_admin_1_states_provinces_scale_rank.shp \
 	ne_10m_admin_1_states_provinces_lines:data/ne/10m/cultural/ne_10m_admin_1_states_provinces_lines.zip:ne_10m_admin_1_states_provinces_lines.shp
