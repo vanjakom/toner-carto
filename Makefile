@@ -584,7 +584,7 @@ PLACES=BC:data/extract/north-america/ca/british-columbia-latest.osm.pbf \
 	   sf:data/metro/san-francisco.osm.pbf \
 	   sfbay:data/metro/sf-bay-area.osm.pbf \
 	   seattle:data/metro/seattle_washington.osm.pbf \
-	   WA:data/extract/north-america/us/washington-latest.osm.pbf
+	   WA:data/extract/north-america/us/washington-latest.osm.pbf \
 	   SERBIA:data/extract/europe/serbia-latest.osm.pbf
 
 $(foreach place,$(PLACES),$(eval $(call import,$(place))))
