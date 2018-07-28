@@ -7,7 +7,7 @@ RUN \
   apt-get upgrade -y && \
   apt-get install -y build-essential curl git software-properties-common unzip zip && \
   apt-add-repository -y ppa:chris-lea/node.js && \
-  apt-add-repository -y ppa:ubuntugis/ubuntugis-unstable && \
+  apt-add-repository -y ppa:ubuntugis/ppa && \
   apt-get update && \
   apt-get install -y nodejs mapnik-utils gdal-bin && \
   apt-get clean
